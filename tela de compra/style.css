@@ -1,0 +1,284 @@
+
+    /* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: #11111F;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-perfil button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E277CD;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E277CD;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #E277CD;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #E277CD;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #E277CD;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* BARRA DE PESQUISA */
+
+.busca{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #11111F;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.busca-btn{
+    color:#E277CD; 
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3d3d3d54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.busca-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.busca:hover > .busca-txt{
+    width: 240px;
+    padding: 0 6px;
+
+}
+.busca:hover > .busca-btn{
+    background: white;
+}
+
+/** DIVS DOS PRODUTOS**/
+
+section.produtos {
+    padding: 40px 4%;
+    text-decoration: none;
+    box-sizing: content-box;
+    
+    
+}
+
+section.produtos .img-produto {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+section.produtos .produtos-box a {
+    color: white;
+}
+
+section.produtos .flex {
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.produtos .produtos-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    margin: 30px;
+    
+}
+
+.produtos .produtos-box:hover {
+    transform: scale(1.00);
+    box-shadow: 0 0 20px #ffffff78;
+    
+}
+
+.produtos .produtos-box i {
+    font-size: 70px;
+    color: #E277CD;
+    
+}
+
+.produtos .produtos-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: white;
+}
+
+section.produtos .flex .produtos-box p {
+    font-size: 16px;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+section.produtos .btn-compra button{
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E277CD;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    margin: 12px 22px ;
+    transition: .2s;
+}
+
+section.produtos .btn-compra button:hover{
+    box-shadow: 0px 0px 8px #e277cd57;
+}
+section.produtos .btn-carrinho button{
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #09091b;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    margin: 12px 22px ;
+    transition: .2s;
+    color: white;
+}
+
+section.produtos .btn-carrinho button:hover{
+    box-shadow: 0px 0px 8px #08081413 ;
+}
+
+/** RODAPÉ **/
+
+footer {
+    padding: 35px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #E277CD;
+}
+
+footer .line-footer p i {
+    color: #E277CD;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E277CD;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+
+
+
+
+
