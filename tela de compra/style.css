@@ -213,6 +213,8 @@ section.produtos .btn-compra button{
     width: 150px;
     margin: 12px 22px ;
     transition: .2s;
+    justify-content: space-around;
+    align-items: center;
 }
 
 section.produtos .btn-compra button:hover{
@@ -234,6 +236,12 @@ section.produtos .btn-carrinho button{
 
 section.produtos .btn-carrinho button:hover{
     box-shadow: 0px 0px 8px #08081413 ;
+}
+
+section.produtos .img-produto{
+    height: 250px;
+    width: 230px;
+    border-radius: 30px;
 }
 
 /** RODAPÉ **/
